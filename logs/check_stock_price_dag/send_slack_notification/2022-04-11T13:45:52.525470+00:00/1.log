@@ -1,0 +1,24 @@
+[2022-04-11 13:46:03,890] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: check_stock_price_dag.send_slack_notification manual__2022-04-11T13:45:52.525470+00:00 [queued]>
+[2022-04-11 13:46:03,904] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: check_stock_price_dag.send_slack_notification manual__2022-04-11T13:45:52.525470+00:00 [queued]>
+[2022-04-11 13:46:03,905] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 13:46:03,906] {taskinstance.py:1250} INFO - Starting attempt 1 of 2
+[2022-04-11 13:46:03,907] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 13:46:03,921] {taskinstance.py:1270} INFO - Executing <Task(SimpleHttpOperator): send_slack_notification> on 2022-04-11 13:45:52.525470+00:00
+[2022-04-11 13:46:03,925] {standard_task_runner.py:52} INFO - Started process 924 to run task
+[2022-04-11 13:46:03,931] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'check_stock_price_dag', 'send_slack_notification', 'manual__2022-04-11T13:45:52.525470+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/check_stock_price.py', '--cfg-path', '/tmp/tmp05gi08xb', '--error-file', '/tmp/tmpb_njt213']
+[2022-04-11 13:46:03,932] {standard_task_runner.py:80} INFO - Job 8: Subtask send_slack_notification
+[2022-04-11 13:46:04,024] {logging_mixin.py:109} INFO - Running <TaskInstance: check_stock_price_dag.send_slack_notification manual__2022-04-11T13:45:52.525470+00:00 [running]> on host c35c8d0e031d
+[2022-04-11 13:46:04,117] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=check_stock_price_dag
+AIRFLOW_CTX_TASK_ID=send_slack_notification
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-11T13:45:52.525470+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-04-11T13:45:52.525470+00:00
+[2022-04-11 13:46:04,118] {http.py:102} INFO - Calling HTTP method
+[2022-04-11 13:46:04,136] {base.py:79} INFO - Using connection to: id: http_default. Host: https://hooks.slack.com, Port: None, Schema: /services/T06GG7QA3/B03B3PJ2LRX/og1b671vsgFZhmIIK5Lohts4, Login: , Password: None, extra: {}
+[2022-04-11 13:46:04,141] {http.py:129} INFO - Sending 'POST' to url: https://hooks.slack.com/services/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
+[2022-04-11 13:46:04,543] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=check_stock_price_dag, task_id=send_slack_notification, execution_date=20220411T134552, start_date=20220411T134603, end_date=20220411T134604
+[2022-04-11 13:46:04,586] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-11 13:46:04,644] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

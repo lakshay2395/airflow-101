@@ -1,0 +1,24 @@
+[2022-04-11 13:48:36,423] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: check_stock_price_dag.check_stock_price scheduled__2022-04-10T00:23:00+00:00 [queued]>
+[2022-04-11 13:48:36,435] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: check_stock_price_dag.check_stock_price scheduled__2022-04-10T00:23:00+00:00 [queued]>
+[2022-04-11 13:48:36,435] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 13:48:36,436] {taskinstance.py:1250} INFO - Starting attempt 1 of 2
+[2022-04-11 13:48:36,437] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 13:48:36,451] {taskinstance.py:1270} INFO - Executing <Task(BranchPythonOperator): check_stock_price> on 2022-04-10 00:23:00+00:00
+[2022-04-11 13:48:36,458] {standard_task_runner.py:52} INFO - Started process 1166 to run task
+[2022-04-11 13:48:36,462] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'check_stock_price_dag', 'check_stock_price', 'scheduled__2022-04-10T00:23:00+00:00', '--job-id', '76', '--raw', '--subdir', 'DAGS_FOLDER/check_stock_price.py', '--cfg-path', '/tmp/tmpin2qy7o6', '--error-file', '/tmp/tmp5d0hv6qs']
+[2022-04-11 13:48:36,463] {standard_task_runner.py:80} INFO - Job 76: Subtask check_stock_price
+[2022-04-11 13:48:36,532] {logging_mixin.py:109} INFO - Running <TaskInstance: check_stock_price_dag.check_stock_price scheduled__2022-04-10T00:23:00+00:00 [running]> on host c35c8d0e031d
+[2022-04-11 13:48:36,588] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=check_stock_price_dag
+AIRFLOW_CTX_TASK_ID=check_stock_price
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-10T00:23:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-04-10T00:23:00+00:00
+[2022-04-11 13:48:36,607] {python.py:175} INFO - Done. Returned value was: send_slack_notification
+[2022-04-11 13:48:36,608] {skipmixin.py:140} INFO - Following branch send_slack_notification
+[2022-04-11 13:48:36,608] {skipmixin.py:171} INFO - Skipping tasks ['no_op']
+[2022-04-11 13:48:36,649] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=check_stock_price_dag, task_id=check_stock_price, execution_date=20220410T002300, start_date=20220411T134836, end_date=20220411T134836
+[2022-04-11 13:48:36,676] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-11 13:48:36,733] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

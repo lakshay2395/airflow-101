@@ -1,0 +1,23 @@
+[2022-04-11 13:45:54,884] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: check_stock_price_dag.get_stock_price scheduled__2022-04-10T00:00:00+00:00 [queued]>
+[2022-04-11 13:45:54,899] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: check_stock_price_dag.get_stock_price scheduled__2022-04-10T00:00:00+00:00 [queued]>
+[2022-04-11 13:45:54,900] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 13:45:54,900] {taskinstance.py:1250} INFO - Starting attempt 1 of 2
+[2022-04-11 13:45:54,903] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-11 13:45:54,921] {taskinstance.py:1270} INFO - Executing <Task(PythonOperator): get_stock_price> on 2022-04-10 00:00:00+00:00
+[2022-04-11 13:45:54,926] {standard_task_runner.py:52} INFO - Started process 903 to run task
+[2022-04-11 13:45:54,932] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'check_stock_price_dag', 'get_stock_price', 'scheduled__2022-04-10T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/check_stock_price.py', '--cfg-path', '/tmp/tmpczks1fyt', '--error-file', '/tmp/tmp0ida0keg']
+[2022-04-11 13:45:54,933] {standard_task_runner.py:80} INFO - Job 3: Subtask get_stock_price
+[2022-04-11 13:45:54,996] {logging_mixin.py:109} INFO - Running <TaskInstance: check_stock_price_dag.get_stock_price scheduled__2022-04-10T00:00:00+00:00 [running]> on host c35c8d0e031d
+[2022-04-11 13:45:55,052] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=check_stock_price_dag
+AIRFLOW_CTX_TASK_ID=get_stock_price
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-10T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-04-10T00:00:00+00:00
+[2022-04-11 13:45:55,064] {logging_mixin.py:109} INFO - api_key =  c982tdiad3ibrc51tnug
+[2022-04-11 13:45:55,834] {python.py:175} INFO - Done. Returned value was: 131.4
+[2022-04-11 13:45:55,858] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=check_stock_price_dag, task_id=get_stock_price, execution_date=20220410T000000, start_date=20220411T134554, end_date=20220411T134555
+[2022-04-11 13:45:55,913] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-11 13:45:55,958] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
