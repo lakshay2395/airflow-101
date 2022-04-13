@@ -58,7 +58,7 @@ with DAG(
     send_slack_notification = SimpleHttpOperator(
         task_id='send_slack_notification',
         http_conn_id='http_default',
-        endpoint='/services/T06GG7QA3/B03B3PJ2LRX/og1b671vsgFZhmIIK5Lohts4',
+        endpoint='<uri>',
         data='{"text":"Sell stock!"}',
         headers={"Content-Type": "application/json"},
         dag=dag,
